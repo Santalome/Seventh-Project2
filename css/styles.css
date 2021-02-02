@@ -24,46 +24,94 @@
     grid-area: main;
 }
 
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header header"
+        "navigation main";
+}
+
+.main-content{
+    grid-template-columns: 50%;
+}
+
+.traffic, .social{
+    grid-column: 1 / span 2;
+}
+
+.daily, .members, .message{
+    grid-column: 1 / span 1;
+}
+
+.mobile, .activity, .settings{
+    grid-column: 2 / span 1;
+}
+
+.widget-container-full{
+    width: 90vw;
+}
+
+.widget-container-half{
+    width: 45vw;
+}
+
+.header svg{
+    fill: white;
+}
+
+.header img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 .header{
     background-color: rgb(115, 119, 191);
     color: white;
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 
-@media (min-width: 768px){
-    
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "header header"
-            "navigation main";
-    }
+.header h1{
+    flex: 1 1 auto;
+    margin-left: 20px;
+}
 
-    .main-content{
-        grid-template-columns: 50%;
-    }
+.notification-menu{
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+}
 
-    .traffic, .social{
-        grid-column: 1 / span 2;
-    }
+.notification-menu svg{
+    border-right: 1px solid white;
+    margin-right: 10px;
+    padding-right: 10px;
+}
 
-    .daily, .members, .message{
-        grid-column: 1 / span 1;
-    }
+.notification-menu h3{
+    margin-right: 20px;
+}
 
-    .mobile, .activity, .settings{
-        grid-column: 2 / span 1;
-    }
+.navigation-bar{
+    background-color: rgb(115, 119, 191);
+}
 
-    .widget-container-full{
-        width: 90vw;
-    }
+.navigation-bar a img{
+    width: 40px;
+}
 
-    .widget-container-half{
-        width: 45vw;
-    }
+.navigation-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 64px;
+    height: 100%;
+}
 
-    .header svg{
-        fill: white;
-    }
+.navigation-bar a{
+    display: flex;
+    flex: 0 0 64px;
 }
