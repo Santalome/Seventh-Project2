@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .clearfix{
@@ -26,9 +27,11 @@
 
 .grid-container{
     grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px 1fr;
     grid-template-areas: 
-        "header header"
-        "navigation main";
+        "header"
+        "navigation"
+        "main";
 }
 
 .main-content{
@@ -45,24 +48,18 @@
 
 .mobile, .activity, .settings{
     grid-column: 2 / span 1;
-}
-
-.widget-container-full{
-    width: 90vw;
-}
-
-.widget-container-half{
-    width: 45vw;
-}
+}   
 
 .header svg{
     fill: white;
+    padding-right: 5px;
 }
 
 .header img{
-    width: 40px;
+    width: 25px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .header{
@@ -75,7 +72,8 @@
 
 .header h1{
     flex: 1 1 auto;
-    margin-left: 20px;
+    font-size: 1.5em;
+    margin-left: 5px;
 }
 
 .notification-menu{
@@ -84,34 +82,78 @@
     align-items: center;
 }
 
-.notification-menu svg{
-    border-right: 1px solid white;
-    margin-right: 10px;
-    padding-right: 10px;
+.notification-menu h3{
+    font-size: 1em;
+    margin-right: 5px;
 }
 
-.notification-menu h3{
-    margin-right: 20px;
+.notification-menu svg{
+    border-right: 1px solid white;  
 }
 
 .navigation-bar{
-    background-color: rgb(115, 119, 191);
+    background-color: purple;
+    padding: 10px;
 }
 
 .navigation-bar a img{
-    width: 40px;
+    width: 30px;
 }
 
 .navigation-bar{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 64px;
     height: 100%;
 }
 
-.navigation-bar a{
+.main-header{
     display: flex;
-    flex: 0 0 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headline{
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.input-header{
+    width: 150px;
+    padding-left: 6px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.main-header-search{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 55px;
+    padding-top: 10px;
+    background-color: gray;
+}
+
+.alert-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(115, 119, 191);
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.alert-banner-text{
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+
+.alert-banner-close{
+    font-size: 0.9em;
+    padding-right: 5px;
 }
