@@ -157,3 +157,177 @@
     font-size: 0.9em;
     padding-right: 5px;
 }
+
+.traffic-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.traffic-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.traffic-nav li{
+    margin-right: 5px;
+    font-size: 0.7em;
+}
+
+.traffic-header h3{
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.traffic{
+    margin-bottom: 20px;
+}
+
+.daily-content h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.daily{
+    margin-bottom: 10px;
+}
+
+.mobile-content h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.mobile-content{
+    margin-bottom: 15px;
+}
+
+.social-svg{
+    background-color: rgb(115, 119, 191);
+    width: 40px;
+    border-radius: 50%;
+}
+
+.social-title{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-wrapper{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: gray;
+    margin-bottom: 20px;
+    padding: 4px;
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.social-name{
+    font-size: 0.7em;
+}
+
+.social-number{
+    font-size: 1.4em;
+}
+
+.col1{
+    margin-left: 5px;
+}
+
+.profile-image{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.members h3,
+.activity h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.members-container,
+.activity-container{
+    display: flex;
+    margin-left: 5px;
+    font-size: 0.9em;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.date{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.members-text{
+    margin-left: 5px;
+}
+
+.arrow{
+    margin-left: auto;
+    color: rgb(115, 119, 191);
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.message h3{
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.message{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.widget-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field,
+.form-area,
+.button-primary{
+    border-radius: 4px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.form-field{
+    height: 25px;
+}
+
+.form-area{
+    height: 70px;
+}
+
+.button-primary{
+    background-color: rgb(115, 119, 191);
+    color: white;
+    border-style: none;
+    padding: 8px;
+}
