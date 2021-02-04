@@ -26,6 +26,7 @@
 }
 
 .grid-container{
+    color: rgb(106, 105, 105);
     grid-template-columns: 1fr;
     grid-template-rows: 60px 60px 1fr;
     grid-template-areas: 
@@ -92,7 +93,7 @@
 }
 
 .navigation-bar{
-    background-color: purple;
+    background-color: rgb(77, 76, 114);
     padding: 10px;
 }
 
@@ -116,6 +117,7 @@
 .headline{
     font-size: 1.5em;
     margin-left: 5px;
+    color: rgb(106, 105, 105);
 }
 
 .input-header{
@@ -123,16 +125,16 @@
     padding-left: 6px;
     margin-bottom: 10px;
     margin-right: 5px;
-    border-style: none;
     border-radius: 3px;
+    border-color: rgb(226, 226, 226);
 }
 
 .main-header-search{
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
     padding-left: 55px;
     padding-top: 10px;
-    background-color: gray;
+    background-color: rgb(251, 251, 251);
 }
 
 .alert-banner{
@@ -146,6 +148,7 @@
     margin-bottom: 20px;
     margin-right: 5px;
     margin-left: 5px;
+    color: white;
 }
 
 .alert-banner-text{
@@ -233,7 +236,7 @@
     display: flex;
     border: 1px solid black;
     border-radius: 4px;
-    background-color: gray;
+    background-color: rgb(251, 251, 251);
     margin-bottom: 20px;
     padding: 4px;
     flex-grow: 1;
@@ -329,11 +332,22 @@
     background-color: rgb(115, 119, 191);
     color: white;
     border-style: none;
-    padding: 8px;
+    height: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.widget-container{
-    margin-bottom: 10px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
@@ -346,9 +360,9 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -358,27 +372,134 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider {
+    background-color: rgb(115, 119, 191);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(115, 119, 191);
+}
+
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
+
+.settings h3{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.settings{
+    margin-left: 5px;
+}
+
+.switch-section{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.switch{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+.settings-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-time{
+    margin-top: 25px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.second-button{
+    height: 30px;
+    flex-grow: 1;
+    background-color: rgb(115, 119, 191);
+    border-style: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.button-disabled{
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px){
+    .grid-container{
+        grid-template-columns: 55px 1fr;
+        grid-template-areas: 
+            "header header"
+            "navigation main";
+    }
+
+    .header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .main{
+        grid-template-columns: 50%;
+    }
+
+    .traffic,
+    .social{
+        grid-column: 1 / span 2;
+    }
+
+    .daily,
+    .members,
+    .message{
+        grid-column: 1 / span 1;
+    }
+
+    .mobile,
+    .activity,
+    .settings{
+        grid-column: 2 span 1;
+    }
+
+    .widget-container-full{
+        width: 90vw;
+    }
+
+    .widget-container-half{
+        width: 45vw;
+    }
+}
