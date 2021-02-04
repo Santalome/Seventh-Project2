@@ -464,14 +464,25 @@ input:checked + .slider:before {
 @media (min-width: 768px){
     .grid-container{
         grid-template-columns: 55px 1fr;
+        grid-template-rows: 70px 1fr;
         grid-template-areas: 
             "header header"
             "navigation main";
     }
 
     .header{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .notification-menu svg{
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .notification-menu img{
+        width: 30px;
+        margin-right: 10px;
     }
 
     .main{
@@ -503,10 +514,177 @@ input:checked + .slider:before {
         width: 45vw;
     }
 
+    .input-header{
+        width: 300px;
+    }
+    .main-header-search{
+        padding-left: 280px;
+    }
+
     .navigation-bar{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         height: 100%;
+    }
+
+    .navigation-bar a{
+        margin-top: 20px;
+    }
+
+    .main-content{
+        padding-left: 5px;
+    }
+
+    .alert-banner{
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .traffic{
+        margin: 0;
+    }
+
+    .widget-container-full{
+        margin-bottom: 20px;
+    }
+
+    .traffic-nav li{
+        margin-right: 20px;
+    }
+
+    .traffic-nav:last-child{
+        margin-right: 10px;
+    }
+
+    .daily{
+        width: 50%;
+        float: left;
+        margin: 0;
+    }
+
+    .mobile-content{
+        margin-bottom: 0px;
+    }
+
+    .widget-container-half{
+        margin-bottom: 20px;
+    }
+
+    .daily-content h3{
+        margin-bottom: 10px;
+    }
+
+
+    .mobile{
+        width: 49.8%;
+        float: right;
+        border-left: 1px solid gray;
+    }
+
+    .mobile h3{
+        margin-left: 10px;
+    }
+
+    .social-wrapper{
+        align-items: center;
+        height: 60px;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .col1{
+        margin-left: 5px;
+    }
+
+    .col1,
+    .col2{
+        margin-right: 30px;
+    }
+
+    .social-name{
+        color: rgb(115, 119, 191);
+        font-weight: bold;
+    }
+
+    .social-number{
+        font-size: 1.8em;
+    }
+
+    .social-text{
+        margin-left: 25px;
+    }
+
+    .members{
+        width: 50%;
+        float: left;
+    }
+
+    .activity{
+        width: 49.8%;
+        float: right;
+        border-left: 1px solid gray;
+    }
+
+    .date{
+        margin-right: 15px;
+    }
+
+    .arrow{
+        margin-right: 15px;
+    }
+
+    .line-margin{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .message{
+        float: left;
+        width: 50%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .message h3{
+        margin-left: 5px;
+    }
+
+    #userField{
+        margin-top: 15px;
+    }
+
+    .form-area{
+        margin-top: 15px;
+        height: 86.5px;
+    }
+
+    .widget-container{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+    .settings h3{
+        margin-left: 10px;
+    }
+
+    .settings-order{
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+    .settings{
+        float: right;
+        width: 49.8%;
+        margin-left: 0px;
+        border-left: 1px solid gray;
+    }
+
+    .settings-button{
+        margin: 0px;
+        margin-top: 10px;
     }
 }
