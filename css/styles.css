@@ -4,6 +4,27 @@
     font-family: 'Dosis', sans-serif;
 }
 
+/* ANIMATIONS */
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    10%,
+    40% {
+        transform: rotate(8deg);
+    }
+    40%,
+    60% {
+        transform: rotate(0deg);
+    }
+    60%,
+    90% {
+        transform: rotate(-8deg);
+    }
+}
+
 .clearfix{
     overflow: auto;
     clear: both;
@@ -88,9 +109,24 @@
     margin-right: 5px;
 }
 
-.notification-menu svg{
-    border-right: 1px solid white;  
+.bell:hover{
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    animation-duration: .3s;
+    animation-iteration-count: 2;
+    animation-delay: .3s;
 }
+
+.circle{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(129, 201, 143);
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    right: 32px;
+}
+
 
 .navigation-bar{
     background-color: rgb(77, 76, 114);
@@ -188,6 +224,13 @@
 
 .traffic{
     margin-bottom: 20px;
+}
+
+.activate{
+    background-color: rgb(129, 201, 143);
+    color: white;
+    border-radius: 20px;
+    padding: 3px 6px 3px 6px;
 }
 
 .daily-content h3{
@@ -686,5 +729,38 @@ input:checked + .slider:before {
     .settings-button{
         margin: 0px;
         margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .input-header{
+        margin-left: 700px;
+    }
+
+    .traffic-nav{
+        font-size: 1.2em;
+    }
+
+    .social-title{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .social-wrapper{
+        height: 80px;
+    }
+
+    .social-image{
+        width: 60px;
+    }
+
+    .col1{
+        margin-left: 80px;
+        margin-right: 60px;
+    }
+
+    .col3{
+        margin-right: 80px;
+        margin-left: 60px;
     }
 }

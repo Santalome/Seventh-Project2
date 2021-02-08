@@ -17,7 +17,7 @@
         <h1>YourApp</h1>
         <div class="notification-menu">
             <?xml version="1.0" encoding="utf-8"?>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="bell" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
                 style="enable-background:new 0 0 32 32;" width="25px" xml:space="preserve">
                 <g id="_x36__6_">
@@ -28,6 +28,9 @@
                     </g>
                 </g>
             </svg>
+            <div class="circle">
+
+            </div>
             <div id="notifications">
 
             </div>
@@ -245,7 +248,7 @@
         <section class="message clearfix">
             <h3>Message User</h3>
 
-            <form class="widget-container">
+            <form class="widget-container" onsubmit=" return(validateForm())">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
                 <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
                 <button class="button-primary" id="send">Send</button>

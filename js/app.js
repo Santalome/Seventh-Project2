@@ -1,7 +1,7 @@
 const alertBanner = document.querySelector(".alert");
 const bannerHtml = `<div class="alert-banner">
         <p class="alert-banner-text"><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
-        <p class="alert-banner-close"><strong>x</strong></p>
+        <p class="alert-banner-close"><strong onclick="hide(alertBanner);">x</strong></p>
         </div >`;
 
 alertBanner.innerHTML = bannerHtml;
@@ -110,3 +110,29 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 });
+
+function hide(obj){
+    obj.style.display = 'none';
+}
+
+const submitBtn = document.querySelector(".button-primary");
+
+const validate = (e) => {
+    e.preventDefault();
+    const username = document.querySelector("#userField");
+    const usertextarea = document.querySelector("#messageField");
+    if (username.value === "") {
+        alert("Please enter your username.");
+        username.focus();
+        return false;
+    }
+    if (usertextarea.value === "") {
+        alert("Please enter your message.");
+        usertextarea.focus();
+        return false;
+    }
+
+    return true;
+}
+
+submitBtn.addEventListener('click', validate);
