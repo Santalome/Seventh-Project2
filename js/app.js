@@ -131,7 +131,7 @@ const validate = (e) => {
         usertextarea.focus();
         return false;
     }
-
+    alert("Message sent.");
     return true;
 }
 
