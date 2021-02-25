@@ -733,9 +733,6 @@ input:checked + .slider:before {
 }
 
 @media (min-width: 1024px){
-    .input-header{
-        margin-left: 700px;
-    }
 
     .traffic-nav{
         font-size: 1.2em;
